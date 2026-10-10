@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IQRA | Social Media Marketer, Tricker, Ethical Hacker & Full Stack Web Developer</title>
+<title>IQRA | Web Developer & Ethical Hacker</title>
+<meta name="description" content="IQRA - Professional Social Media Marketer, Tricker (small hacking tricks), Ethical Hacker and Full Stack Web Developer. Hire IQRA for social media growth, secure websites, security testing and modern web development. Contact: iqradealer@gmail.com | 03186818241">
+<meta name="keywords" content="IQRA, Iqra portfolio, Iqra web developer, Iqra ethical hacker, Iqra social media marketer, Iqra tricker, small hacking tricks, full stack developer Pakistan, ethical hacker Pakistan, social media marketing Pakistan">
+<meta name="author" content="IQRA">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#04070d">
+<meta property="og:type" content="website">
+<meta property="og:title" content="IQRA | Social Media Marketer, Tricker, Ethical Hacker & Full Stack Developer">
+<meta property="og:description" content="Professional online portfolio of IQRA. Social media marketing, hacking tricks, ethical hacking and full stack web development.">
+<meta property="og:site_name" content="IQRA Portfolio">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IQRA | Portfolio">
+<meta name="twitter:description" content="Social Media Marketer, Tricker, Ethical Hacker & Full Stack Web Developer.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2304070d'/><text x='50' y='70' font-size='62' font-family='monospace' font-weight='bold' text-anchor='middle' fill='%2300f0ff'>I</text></svg>">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "IQRA",
+  "alternateName": ["Iqra", "Iqra Portfolio"],
+  "jobTitle": "Social Media Marketer, Tricker, Ethical Hacker & Full Stack Web Developer",
+  "email": "mailto:iqradealer@gmail.com",
+  "telephone": "+923186818241",
+  "description": "Professional Social Media Marketer, Tricker, Ethical Hacker and Full Stack Web Developer working online.",
+  "knowsAbout": ["Social Media Marketing", "Hacking Tricks", "Ethical Hacking", "Security Testing", "Full Stack Web Development", "JavaScript", "HTML", "CSS", "SEO"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#04070d; --panel:rgba(10,18,32,.62); --line:rgba(120,200,255,.14);
+  --c1:#00f0ff; --c2:#7cff6b; --c3:#ff2bd6; --c4:#7a5cff;
+  --text:#e6f1ff; --mute:#7f93ad;
+  --neon:linear-gradient(120deg,#00f0ff,#7a5cff 50%,#ff2bd6);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;line-height:1.65}
+body.loading{overflow:hidden}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--c1);color:#001018}
+::-webkit-scrollbar{width:7px}::-webkit-scrollbar-track{background:var(--bg)}::-webkit-scrollbar-thumb{background:var(--neon);border-radius:8px}
+.mono{font-family:'Share Tech Mono',monospace}
+h1,h2,h3{font-family:'Orbitron',sans-serif;line-height:1.15;letter-spacing:.5px}
+.container{width:min(1200px,92%);margin:auto}
+section{padding:120px 0;position:relative}
+.nt{background:var(--neon);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% 100%;animation:ns 6s linear infinite}
+@keyframes ns{to{background-position:200% 0}}
+
+/* background layers */
+#rain{position:fixed;inset:0;z-index:-4;width:100%;height:100%;opacity:.5}
+.grid-bg{position:fixed;inset:0;z-index:-3;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 50% 30%,#000 10%,transparent 75%);opacity:.55}
+.aurora{position:fixed;z-index:-2;border-radius:50%;filter:blur(130px);opacity:.28;animation:drift 18s ease-in-out infinite}
+.aurora.a{width:520px;height:520px;background:var(--c4);top:-160px;left:-120px}
+.aurora.b{width:480px;height:480px;background:var(--c1);top:35%;right:-180px;animation-delay:-6s}
+.aurora.c{width:420px;height:420px;background:var(--c3);bottom:-160px;left:25%;animation-delay:-11s}
+@keyframes drift{50%{transform:translate(70px,50px) scale(1.18)}}
+.scan{position:fixed;inset:0;z-index:9990;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(0,0,0,.14) 0 1px,transparent 1px 3px);mix-blend-mode:multiply;opacity:.35}
+
+/* loader */
+#loader{position:fixed;inset:0;background:#02040a;z-index:9999;display:grid;place-items:center;transition:opacity .7s,visibility .7s}
+#loader.hide{opacity:0;visibility:hidden}
+.boot{width:min(520px,88%);font-family:'Share Tech Mono',monospace;font-size:14px;color:var(--c2)}
+.boot .ln{opacity:0;transform:translateX(-10px);animation:bl .4s forwards}
+.boot .ln b{color:var(--c1);font-weight:400}
+@keyframes bl{to{opacity:1;transform:none}}
+.boot .bar{height:4px;background:rgba(255,255,255,.08);margin-top:22px;border-radius:4px;overflow:hidden}
+.boot .bar i{display:block;height:100%;width:0;background:var(--neon);animation:fill 2.4s ease forwards}
+@keyframes fill{to{width:100%}}
+.boot h2{font-size:54px;letter-spacing:12px;text-align:center;margin-bottom:28px}
+
+/* progress, cursor */
+#prog{position:fixed;top:0;left:0;height:3px;width:0;background:var(--neon);z-index:1200;box-shadow:0 0 14px var(--c1)}
+.cur{position:fixed;top:0;left:0;width:34px;height:34px;border:1.5px solid var(--c1);border-radius:50%;pointer-events:none;z-index:9995;transform:translate(-50%,-50%);transition:width .25s,height .25s,border-color .25s,background .25s;box-shadow:0 0 14px rgba(0,240,255,.5)}
+.cur.big{width:64px;height:64px;background:rgba(0,240,255,.08);border-color:var(--c3)}
+.cur-dot{position:fixed;top:0;left:0;width:6px;height:6px;background:var(--c2);border-radius:50%;pointer-events:none;z-index:9996;transform:translate(-50%,-50%);box-shadow:0 0 10px var(--c2)}
+@media(hover:none){.cur,.cur-dot{display:none}}
+
+/* top bar */
+.top{position:fixed;top:0;left:0;width:100%;z-index:1000;padding:18px 0;transition:.4s}
+.top.s{background:rgba(4,7,13,.75);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);padding:12px 0}
+.top .container{display:flex;justify-content:space-between;align-items:center}
+.logo{font-family:'Orbitron',sans-serif;font-weight:900;font-size:26px;letter-spacing:6px}
+.logo span{color:var(--c1);text-shadow:0 0 18px var(--c1)}
+.status{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--c2);padding:8px 18px;border:1px solid rgba(124,255,107,.35);border-radius:40px;background:rgba(124,255,107,.06);font-family:'Share Tech Mono',monospace;letter-spacing:1px}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--c2);box-shadow:0 0 10px var(--c2);animation:blink 1.4s infinite}
+@keyframes blink{50%{opacity:.25}}
+
+/* dock */
+.dock{position:fixed;bottom:22px;left:50%;transform:translateX(-50%);z-index:1100;display:flex;gap:6px;padding:10px 14px;border-radius:26px;background:rgba(8,14,26,.72);backdrop-filter:blur(18px);border:1px solid var(--line);box-shadow:0 20px 60px -10px rgba(0,0,0,.8),0 0 40px -12px rgba(0,240,255,.35)}
+.dock a{position:relative;width:48px;height:48px;border-radius:15px;display:grid;place-items:center;font-size:21px;transition:.3s cubic-bezier(.3,1.6,.5,1);color:var(--mute)}
+.dock a:hover{transform:translateY(-12px) scale(1.25);background:rgba(0,240,255,.12)}
+.dock a.on{background:linear-gradient(135deg,rgba(0,240,255,.22),rgba(255,43,214,.18));color:#fff;box-shadow:0 0 18px rgba(0,240,255,.35)}
+.dock a::after{content:attr(data-t);position:absolute;bottom:62px;left:50%;transform:translateX(-50%) translateY(6px);font-size:11.5px;padding:5px 12px;border-radius:8px;background:#06101c;border:1px solid var(--line);color:var(--c1);opacity:0;pointer-events:none;transition:.25s;white-space:nowrap;font-family:'Share Tech Mono',monospace}
+.dock a:hover::after{opacity:1;transform:translateX(-50%)}
+
+/* buttons */
+.btn{position:relative;display:inline-flex;align-items:center;gap:12px;padding:16px 34px;font-weight:600;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;border:none;cursor:pointer;font-family:inherit;transition:.35s;clip-path:polygon(14px 0,100% 0,100% calc(100% - 14px),calc(100% - 14px) 100%,0 100%,0 14px)}
+.btn-main{background:var(--neon);color:#02060c;box-shadow:0 0 0 0 transparent}
+.btn-main:hover{filter:brightness(1.15) saturate(1.2);transform:translateY(-4px)}
+.btn-out{background:rgba(0,240,255,.07);color:var(--c1);box-shadow:inset 0 0 0 1.5px rgba(0,240,255,.5)}
+.btn-out:hover{background:rgba(0,240,255,.16);transform:translateY(-4px);color:#fff}
+
+/* hero */
+#home{min-height:100vh;display:flex;align-items:center;padding-top:120px}
+.hero-grid{display:grid;grid-template-columns:1.25fr 1fr;gap:50px;align-items:center}
+.tag{font-family:'Share Tech Mono',monospace;color:var(--c1);font-size:14px;letter-spacing:3px;margin-bottom:18px;display:block}
+.tag::before{content:"> ";color:var(--c2)}
+.glitch{font-family:'Orbitron',sans-serif;font-weight:900;font-size:clamp(78px,15vw,190px);line-height:.95;letter-spacing:8px;position:relative;display:inline-block;color:#fff;text-shadow:0 0 40px rgba(0,240,255,.45)}
+.glitch::before,.glitch::after{content:attr(data-text);position:absolute;left:0;top:0;width:100%}
+.glitch::before{color:var(--c3);animation:g1 3.2s infinite linear alternate-reverse;clip-path:inset(0 0 60% 0);mix-blend-mode:screen}
+.glitch::after{color:var(--c1);animation:g2 2.6s infinite linear alternate-reverse;clip-path:inset(55% 0 0 0);mix-blend-mode:screen}
+@keyframes g1{0%,88%{transform:translate(0)}90%{transform:translate(-6px,2px)}94%{transform:translate(5px,-2px)}100%{transform:translate(0)}}
+@keyframes g2{0%,84%{transform:translate(0)}86%{transform:translate(6px,-2px)}92%{transform:translate(-5px,2px)}100%{transform:translate(0)}}
+.role{font-family:'Share Tech Mono',monospace;font-size:clamp(16px,2.2vw,24px);color:var(--c2);margin:22px 0 18px;min-height:36px}
+.role::after{content:"█";margin-left:4px;animation:blink .9s infinite}
+.lead{color:var(--mute);max-width:560px;font-size:17px;margin-bottom:38px}
+.lead b{color:var(--text);font-weight:500}
+.hero-btns{display:flex;gap:16px;flex-wrap:wrap}
+
+/* hud */
+.hud{position:relative;aspect-ratio:1;width:min(440px,86vw);margin:auto;display:grid;place-items:center}
+.ring{position:absolute;border-radius:50%;border:1.5px dashed rgba(0,240,255,.4)}
+.r1{inset:0;animation:rot 28s linear infinite}
+.r2{inset:11%;border:2px solid transparent;border-top-color:var(--c3);border-bottom-color:var(--c1);animation:rot 9s linear infinite reverse}
+.r3{inset:22%;border:1.5px dotted rgba(124,255,107,.55);animation:rot 16s linear infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+.core{position:relative;width:46%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 35% 30%,#12304f,#050b16 70%);border:1px solid rgba(0,240,255,.5);box-shadow:0 0 60px rgba(0,240,255,.35),inset 0 0 40px rgba(122,92,255,.4)}
+.core span{font-family:'Orbitron',sans-serif;font-weight:900;font-size:min(110px,22vw)}
+.orbit{position:absolute;inset:0;animation:rot 22s linear infinite}
+.orbit i{position:absolute;width:56px;height:56px;border-radius:16px;display:grid;place-items:center;font-style:normal;font-size:24px;background:rgba(8,14,26,.9);border:1px solid var(--line);backdrop-filter:blur(8px);box-shadow:0 0 22px rgba(0,240,255,.3)}
+.orbit i b{display:block;animation:rot 22s linear infinite reverse;font-weight:400}
+.orbit i:nth-child(1){top:-26px;left:calc(50% - 28px)}
+.orbit i:nth-child(2){right:-26px;top:calc(50% - 28px)}
+.orbit i:nth-child(3){bottom:-26px;left:calc(50% - 28px)}
+.orbit i:nth-child(4){left:-26px;top:calc(50% - 28px)}
+.hud-tag{position:absolute;font-family:'Share Tech Mono',monospace;font-size:11.5px;color:var(--c1);background:rgba(4,10,20,.85);border:1px solid var(--line);padding:6px 12px;border-radius:6px;animation:bob 4s ease-in-out infinite}
+.hud-tag.t1{top:8%;right:-4%}.hud-tag.t2{bottom:10%;left:-6%;animation-delay:-2s;color:var(--c2)}
+@keyframes bob{50%{transform:translateY(-10px)}}
+.scroll-ind{position:absolute;bottom:110px;left:50%;transform:translateX(-50%);width:26px;height:44px;border:2px solid var(--line);border-radius:20px;display:none}
+.scroll-ind::after{content:"";position:absolute;top:8px;left:50%;width:4px;height:8px;border-radius:4px;background:var(--c1);transform:translateX(-50%);animation:sc 1.6s infinite}
+@keyframes sc{60%{transform:translate(-50%,16px);opacity:0}}
+
+/* marquee */
+.strip{padding:22px 0;border-block:1px solid var(--line);background:rgba(0,240,255,.03);overflow:hidden;transform:rotate(-1.2deg);margin:20px -2%}
+.strip .tr{display:flex;gap:50px;width:max-content;animation:mq 26s linear infinite;font-family:'Orbitron',sans-serif;font-size:22px;font-weight:700;letter-spacing:3px;white-space:nowrap}
+.strip span{display:flex;align-items:center;gap:50px;color:transparent;-webkit-text-stroke:1px rgba(0,240,255,.7)}
+.strip span::after{content:"✦";color:var(--c3);-webkit-text-stroke:0}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* heads */
+.sh{margin-bottom:64px}
+.sh small{display:block;font-family:'Share Tech Mono',monospace;color:var(--c2);letter-spacing:4px;font-size:13px;margin-bottom:12px}
+.sh small::before{content:"// "}
+.sh h2{font-size:clamp(32px,5vw,58px)}
+.sh p{color:var(--mute);max-width:560px;margin-top:14px}
+.reveal{opacity:0;transform:translateY(46px) scale(.98);filter:blur(6px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1),filter .9s}
+.reveal.show{opacity:1;transform:none;filter:none}
+
+/* panel base */
+.pn{background:var(--panel);border:1px solid var(--line);border-radius:22px;backdrop-filter:blur(14px);position:relative;overflow:hidden;transition:.45s}
+.pn:hover{border-color:rgba(0,240,255,.5);box-shadow:0 0 50px -14px rgba(0,240,255,.45)}
+.pn::before{content:"";position:absolute;top:0;left:0;width:60px;height:2px;background:var(--c1);box-shadow:0 0 12px var(--c1)}
+
+/* bento about */
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}
+.b-main{grid-column:span 4;padding:44px}
+.b-id{grid-column:span 2;padding:36px;display:flex;flex-direction:column;gap:16px;justify-content:center}
+.b-stat{grid-column:span 2;padding:32px;text-align:center}
+.b-quote{grid-column:span 6;padding:36px 44px;display:flex;gap:26px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.b-main h3{font-size:28px;margin-bottom:18px}
+.b-main p{color:var(--mute);margin-bottom:14px}
+.b-id div{display:flex;flex-direction:column}
+.b-id small{color:var(--c1);font-family:'Share Tech Mono',monospace;font-size:12px;letter-spacing:2px}
+.b-id b{font-weight:500;font-size:15.5px;word-break:break-all}
+.b-stat h4{font-family:'Orbitron',sans-serif;font-size:52px}
+.b-stat span{font-size:12px;letter-spacing:2px;color:var(--mute);font-family:'Share Tech Mono',monospace}
+.b-quote p{font-family:'Orbitron',sans-serif;font-size:clamp(17px,2.2vw,24px);max-width:720px}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:22px}
+.sv{padding:38px 30px;border-radius:22px;position:relative;background:var(--panel);backdrop-filter:blur(14px);transition:.45s;transform-style:preserve-3d;isolation:isolate}
+.sv::before{content:"";position:absolute;inset:-1.5px;border-radius:23px;z-index:-2;background:conic-gradient(from var(--a,0deg),transparent 0 60%,var(--c1),var(--c3),transparent);animation:spinb 5s linear infinite;opacity:.55}
+.sv::after{content:"";position:absolute;inset:0;border-radius:22px;z-index:-1;background:#07101d}
+@property --a{syntax:'<angle>';initial-value:0deg;inherits:false}
+@keyframes spinb{to{--a:360deg}}
+.sv:hover{transform:translateY(-10px)}
+.sv:hover::before{opacity:1}
+.sv .no{font-family:'Share Tech Mono',monospace;color:var(--c2);font-size:13px;letter-spacing:2px}
+.sv .ic{font-size:40px;margin:16px 0;display:block;transition:.5s;filter:drop-shadow(0 0 14px rgba(0,240,255,.6))}
+.sv:hover .ic{transform:scale(1.2) rotate(-8deg)}
+.sv h3{font-size:20px;margin-bottom:12px}
+.sv p{color:var(--mute);font-size:14.5px;margin-bottom:18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{font-family:'Share Tech Mono',monospace;font-size:11.5px;padding:5px 12px;border:1px solid rgba(0,240,255,.3);border-radius:6px;color:var(--c1);background:rgba(0,240,255,.05)}
+
+/* skills rings */
+.rings{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:22px}
+.rg{padding:30px 16px;text-align:center}
+.rg svg{width:120px;height:120px;transform:rotate(-90deg)}
+.rg circle{fill:none;stroke-width:7;stroke-linecap:round}
+.rg .bg{stroke:rgba(255,255,255,.08)}
+.rg .fg{stroke:url(#gr);stroke-dasharray:276.46;stroke-dashoffset:276.46;transition:stroke-dashoffset 2s cubic-bezier(.2,.8,.2,1);filter:drop-shadow(0 0 6px var(--c1))}
+.rg .pc{margin-top:-82px;height:82px;display:grid;place-items:center;font-family:'Orbitron',sans-serif;font-size:21px;font-weight:700}
+.rg h4{margin-top:10px;font-size:13.5px;font-weight:500;color:var(--mute);letter-spacing:.5px;font-family:'Space Grotesk',sans-serif}
+
+/* terminal */
+.term{max-width:820px;margin:60px auto 0;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#030610;box-shadow:0 40px 90px -30px rgba(0,240,255,.35)}
+.tb{display:flex;gap:8px;align-items:center;padding:13px 18px;background:rgba(255,255,255,.04)}
+.tb i{width:12px;height:12px;border-radius:50%}.tb i:nth-child(1){background:#ff5f57}.tb i:nth-child(2){background:#febc2e}.tb i:nth-child(3){background:#28c840}
+.tb small{margin-left:auto;font-family:'Share Tech Mono',monospace;color:var(--mute);font-size:12px}
+.tbody{padding:24px;font-family:'Share Tech Mono',monospace;font-size:14px;min-height:230px;color:var(--c2);white-space:pre-wrap}
+.tbody .p{color:var(--c1)}.tbody .g{color:var(--mute)}
+
+/* work */
+.work{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.wk{border-radius:22px;overflow:hidden;position:relative;min-height:340px;display:flex;flex-direction:column;justify-content:flex-end;padding:30px;border:1px solid var(--line);transition:.5s;isolation:isolate}
+.wk::before{content:"";position:absolute;inset:0;z-index:-2;transition:.7s}
+.wk::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(transparent 20%,rgba(3,6,16,.95))}
+.w1::before{background:radial-gradient(circle at 70% 20%,#ff2bd6,transparent 55%),#1a0d2e}
+.w2::before{background:radial-gradient(circle at 30% 20%,#00f0ff,transparent 55%),#06182a}
+.w3::before{background:radial-gradient(circle at 70% 25%,#7cff6b,transparent 55%),#07200f}
+.w4::before{background:radial-gradient(circle at 30% 25%,#7a5cff,transparent 55%),#100a2a}
+.wk:hover{transform:translateY(-12px);border-color:rgba(0,240,255,.6)}
+.wk:hover::before{transform:scale(1.2)}
+.wk .big{position:absolute;top:22px;right:26px;font-size:62px;transition:.6s;filter:drop-shadow(0 0 20px rgba(255,255,255,.4))}
+.wk:hover .big{transform:scale(1.25) rotate(8deg)}
+.wk h3{font-size:21px;margin-bottom:10px}
+.wk p{color:#b8c8dc;font-size:14.5px;margin-bottom:16px}
+
+/* process */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:22px;counter-reset:s}
+.st{padding:34px 28px;counter-increment:s}
+.st::after{content:"0" counter(s);position:absolute;right:22px;top:12px;font-family:'Orbitron',sans-serif;font-weight:900;font-size:64px;color:transparent;-webkit-text-stroke:1px rgba(0,240,255,.25)}
+.st h3{font-size:19px;margin-bottom:10px;position:relative}
+.st p{color:var(--mute);font-size:14.5px;position:relative}
+
+/* contact */
+.cg{display:grid;grid-template-columns:1fr 1.2fr;gap:30px}
+.ci{display:grid;gap:18px;align-content:start}
+.cc{display:flex;gap:18px;align-items:center;padding:24px 26px}
+.cc:hover{transform:translateX(10px)}
+.cc .e{width:54px;height:54px;border-radius:15px;display:grid;place-items:center;font-size:24px;background:linear-gradient(135deg,rgba(0,240,255,.2),rgba(255,43,214,.2));flex:none}
+.cc small{display:block;color:var(--c1);font-family:'Share Tech Mono',monospace;font-size:11.5px;letter-spacing:2px}
+.cc b{font-weight:500;font-size:16px;word-break:break-all}
+form.pn{padding:38px;display:grid;gap:18px}
+.f2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+form input,form textarea,form select{width:100%;padding:17px 18px;border-radius:12px;border:1px solid var(--line);background:rgba(255,255,255,.035);color:#fff;font-family:inherit;font-size:15px;outline:none;transition:.3s}
+form select option{background:#08111e}
+form input:focus,form textarea:focus,form select:focus{border-color:var(--c1);box-shadow:0 0 0 4px rgba(0,240,255,.12),0 0 24px -6px var(--c1)}
+form textarea{min-height:130px;resize:vertical}
+footer{padding:50px 0 130px;text-align:center;border-top:1px solid var(--line);color:var(--mute);font-size:14px}
+footer .logo{display:block;margin-bottom:12px}
+
+.wa{position:fixed;right:24px;bottom:24px;z-index:1100;width:62px;height:62px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 34px rgba(37,211,102,.5);animation:wp 2.4s infinite}
+.wa svg{width:33px;height:33px;fill:#fff}
+@keyframes wp{0%{box-shadow:0 0 0 0 rgba(37,211,102,.6),0 10px 34px rgba(37,211,102,.5)}80%,100%{box-shadow:0 0 0 24px rgba(37,211,102,0),0 10px 34px rgba(37,211,102,.5)}}
+
+@media(max-width:900px){
+  .hero-grid,.cg{grid-template-columns:1fr}
+  .hud{order:-1;width:min(320px,80vw)}
+  #home{text-align:center}.lead{margin-inline:auto}.hero-btns{justify-content:center}
+  .b-main,.b-id,.b-stat,.b-quote{grid-column:span 6}
+  .status{display:none}
+  section{padding:84px 0}
+  .hud-tag{display:none}
+  .dock{padding:8px 10px;gap:2px;bottom:14px}.dock a{width:40px;height:40px;font-size:18px}
+  .dock a::after{display:none}
+  .wa{bottom:84px;right:16px;width:54px;height:54px}
+  .f2{grid-template-columns:1fr}
+  .strip .tr{font-size:16px}
+}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body class="loading">
+
+<div id="loader"><div class="boot">
+  <h2 class="nt">IQRA</h2>
+  <div class="ln" style="animation-delay:.1s"><b>[ OK ]</b> Initializing portfolio core...</div>
+  <div class="ln" style="animation-delay:.5s"><b>[ OK ]</b> Loading social media engine...</div>
+  <div class="ln" style="animation-delay:.9s"><b>[ OK ]</b> Securing connection...</div>
+  <div class="ln" style="animation-delay:1.3s"><b>[ OK ]</b> Compiling full stack modules...</div>
+  <div class="ln" style="animation-delay:1.7s"><b>[ GO ]</b> Welcome. Access granted.</div>
+  <div class="bar"><i></i></div>
+</div></div>
+
+<div id="prog"></div><div class="cur"></div><div class="cur-dot"></div>
+<canvas id="rain"></canvas><div class="grid-bg"></div>
+<div class="aurora a"></div><div class="aurora b"></div><div class="aurora c"></div>
+<div class="scan"></div>
+
+<header class="top" id="top">
+  <div class="container">
+    <a href="#home" class="logo">IQ<span>RA</span></a>
+    <div class="status"><i></i> ONLINE · AVAILABLE FOR WORK</div>
+  </div>
+</header>
+
+<nav class="dock" id="dock">
+  <a href="#home" data-t="Home" class="on">⌂</a>
+  <a href="#about" data-t="About">☺</a>
+  <a href="#services" data-t="Services">✦</a>
+  <a href="#skills" data-t="Skills">⚡</a>
+  <a href="#work" data-t="Work">❖</a>
+  <a href="#process" data-t="Process">⟳</a>
+  <a href="#contact" data-t="Contact">✉</a>
+</nav>
+
+<main>
+<section id="home">
+  <div class="container hero-grid">
+    <div>
+      <span class="tag">HELLO WORLD, I AM</span>
+      <h1 class="glitch" data-text="IQRA">IQRA</h1>
+      <div class="role" id="role"></div>
+      <p class="lead">A professional <b>Social Media Marketer</b>, <b>Tricker</b>, <b>Ethical Hacker</b> and <b>Full Stack Web Developer</b>. I work fully online, growing brands and building fast, secure, modern websites.</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-main mag">Hire Me →</a>
+        <a href="https://wa.me/923186818241?text=Hello%20IQRA%2C%20I%20want%20to%20hire%20you" target="_blank" rel="noopener" class="btn btn-out mag">💬 WhatsApp</a>
+      </div>
+    </div>
+    <div class="hud">
+      <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+      <div class="orbit"><i><b>📣</b></i><i><b>🛡</b></i><i><b>💻</b></i><i><b>⚡</b></i></div>
+      <div class="core"><span class="nt">I</span></div>
+      <div class="hud-tag t1">&gt; secure_mode: ON</div>
+      <div class="hud-tag t2">&gt; status: online</div>
+    </div>
+  </div>
+</section>
+
+<div class="strip"><div class="tr" id="strip"></div></div>
+
+<section id="about">
+  <div class="container">
+    <div class="sh reveal"><small>ABOUT</small><h2>Who is <span class="nt">IQRA</span></h2></div>
+    <div class="bento">
+      <div class="pn b-main reveal">
+        <h3>Multi-skilled digital professional</h3>
+        <p>I'm IQRA, a fully professional digital expert working online. My skills span four powerful fields: social media marketing, small hacking tricks, ethical hacking and full stack web development.</p>
+        <p>My goal is to make your business strong online: grow your brand on social media, build a modern and fast website, secure it against attackers, and share smart security tricks that keep you safe.</p>
+        <p>Quality, honesty and on-time delivery are my priorities on every project.</p>
+      </div>
+      <div class="pn b-id reveal">
+        <div><small>EMAIL</small><b><a href="mailto:iqradealer@gmail.com">iqradealer@gmail.com</a></b></div>
+        <div><small>PHONE</small><b><a href="tel:+923186818241">03186818241</a></b></div>
+        <div><small>WHATSAPP</small><b><a href="https://wa.me/923186818241" target="_blank" rel="noopener">03186818241</a></b></div>
+        <div><small>WORK</small><b>Online / Remote</b></div>
+      </div>
+      <div class="pn b-stat reveal"><h4 class="nt"><span class="cnt" data-to="4">0</span></h4><span>CORE EXPERTISE</span></div>
+      <div class="pn b-stat reveal"><h4 class="nt"><span class="cnt" data-to="24">0</span>/7</h4><span>ONLINE SUPPORT</span></div>
+      <div class="pn b-stat reveal"><h4 class="nt"><span class="cnt" data-to="100">0</span>%</h4><span>PROFESSIONAL</span></div>
+      <div class="pn b-quote reveal">
+        <p>"Grow online. Stay secure. Look <span class="nt">legendary</span>."</p>
+        <a href="#contact" class="btn btn-main mag">Start a Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="sh reveal"><small>SERVICES</small><h2>What I <span class="nt">Deliver</span></h2><p>Four powerful fields, one professional.</p></div>
+    <div class="svc">
+      <div class="sv reveal"><span class="no">01</span><span class="ic">📣</span><h3>Social Media Marketing</h3><p>Brand growth, content strategy, audience engagement and paid campaigns that deliver real results.</p><div class="chips"><span>Instagram</span><span>Facebook</span><span>TikTok</span><span>Ads</span></div></div>
+      <div class="sv reveal"><span class="no">02</span><span class="ic">⚡</span><h3>Tricker</h3><p>Small hacking tricks and quick security tips: smart shortcuts to protect accounts, spot scams and stay safe online.</p><div class="chips"><span>Hacking Tricks</span><span>Security Tips</span><span>Awareness</span></div></div>
+      <div class="sv reveal"><span class="no">03</span><span class="ic">🛡</span><h3>Ethical Hacking</h3><p>Vulnerability assessment, security testing and hardening to keep your website and systems safe.</p><div class="chips"><span>Pen Testing</span><span>Audit</span><span>Hardening</span></div></div>
+      <div class="sv reveal"><span class="no">04</span><span class="ic">💻</span><h3>Full Stack Development</h3><p>Fast, responsive and modern websites and web apps, from frontend to backend, SEO-ready.</p><div class="chips"><span>HTML/CSS</span><span>JavaScript</span><span>Node.js</span><span>SEO</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <div class="sh reveal"><small>SKILLS</small><h2>Power <span class="nt">Stats</span></h2></div>
+    <svg width="0" height="0" style="position:absolute"><defs><linearGradient id="gr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#00f0ff"/><stop offset=".55" stop-color="#7a5cff"/><stop offset="1" stop-color="#ff2bd6"/></linearGradient></defs></svg>
+    <div class="rings">
+      <div class="pn rg reveal"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="44"/><circle class="fg" cx="50" cy="50" r="44" data-p="95"/></svg><div class="pc">95%</div><h4>Social Media Marketing</h4></div>
+      <div class="pn rg reveal"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="44"/><circle class="fg" cx="50" cy="50" r="44" data-p="94"/></svg><div class="pc">94%</div><h4>Frontend Development</h4></div>
+      <div class="pn rg reveal"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="44"/><circle class="fg" cx="50" cy="50" r="44" data-p="90"/></svg><div class="pc">90%</div><h4>Ethical Hacking</h4></div>
+      <div class="pn rg reveal"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="44"/><circle class="fg" cx="50" cy="50" r="44" data-p="90"/></svg><div class="pc">90%</div><h4>Backend Development</h4></div>
+      <div class="pn rg reveal"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="44"/><circle class="fg" cx="50" cy="50" r="44" data-p="88"/></svg><div class="pc">88%</div><h4>Small Hacking Tricks</h4></div>
+      <div class="pn rg reveal"><svg viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="44"/><circle class="fg" cx="50" cy="50" r="44" data-p="92"/></svg><div class="pc">92%</div><h4>SEO & Online Branding</h4></div>
+    </div>
+    <div class="term reveal" id="termbox">
+      <div class="tb"><i></i><i></i><i></i><small>iqra@secure:~</small></div>
+      <div class="tbody" id="term"></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="container">
+    <div class="sh reveal"><small>WORK</small><h2>Featured <span class="nt">Areas</span></h2><p>Areas of work where I deliver results.</p></div>
+    <div class="work">
+      <div class="wk w1 reveal"><span class="big">🚀</span><h3>Brand Growth Campaigns</h3><p>Social media strategy, content planning and ads that boost brand visibility and sales.</p><div class="chips"><span>Marketing</span><span>Content</span></div></div>
+      <div class="wk w2 reveal"><span class="big">🌐</span><h3>Modern Websites & Web Apps</h3><p>Premium, responsive and animated websites built to rank well on Google.</p><div class="chips"><span>Web</span><span>UI/UX</span><span>SEO</span></div></div>
+      <div class="wk w3 reveal"><span class="big">🔐</span><h3>Security Testing & Hardening</h3><p>Ethical security testing of websites and systems, and fixing vulnerabilities.</p><div class="chips"><span>Security</span><span>Audit</span></div></div>
+      <div class="wk w4 reveal"><span class="big">⚡</span><h3>Small Hacking Tricks</h3><p>Handy hacking tricks and tips that show how attacks work, so you can defend against them.</p><div class="chips"><span>Tricks</span><span>Tips</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="container">
+    <div class="sh reveal"><small>PROCESS</small><h2>How I <span class="nt">Work</span></h2></div>
+    <div class="steps">
+      <div class="pn st reveal"><h3>Understand</h3><p>Fully understanding your requirements, goals and target audience.</p></div>
+      <div class="pn st reveal"><h3>Plan & Design</h3><p>Creating a clear strategy and premium design plan that fits your brand.</p></div>
+      <div class="pn st reveal"><h3>Build & Execute</h3><p>Implementing high-quality development, campaigns and security measures.</p></div>
+      <div class="pn st reveal"><h3>Deliver & Support</h3><p>On-time delivery, with online support afterwards.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="sh reveal"><small>CONTACT</small><h2>Let's <span class="nt">Connect</span></h2><p>Have a project or a question? Get in touch now. I reply quickly.</p></div>
+    <div class="cg">
+      <div class="ci">
+        <a class="pn cc reveal" href="mailto:iqradealer@gmail.com"><div class="e">✉</div><div><small>EMAIL</small><b>iqradealer@gmail.com</b></div></a>
+        <a class="pn cc reveal" href="tel:+923186818241"><div class="e">✆</div><div><small>PHONE</small><b>03186818241</b></div></a>
+        <a class="pn cc reveal" href="https://wa.me/923186818241" target="_blank" rel="noopener"><div class="e">💬</div><div><small>WHATSAPP</small><b>03186818241</b></div></a>
+      </div>
+      <form class="pn reveal" id="form">
+        <div class="f2"><input type="text" id="fname" placeholder="Your Name" required><input type="email" id="femail" placeholder="Your Email" required></div>
+        <select id="fservice"><option>Social Media Marketing</option><option>Full Stack Web Development</option><option>Ethical Hacking / Security</option><option>Tricker / Hacking Tricks</option><option>Other</option></select>
+        <textarea id="fmsg" placeholder="Your Message" required></textarea>
+        <button class="btn btn-main" type="submit">Send via WhatsApp 💬</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <a href="#home" class="logo">IQ<span>RA</span></a>
+    <p>Social Media Marketer • Tricker • Ethical Hacker • Full Stack Web Developer</p>
+    <p style="margin-top:8px">© <span id="yr"></span> IQRA. All rights reserved. | iqradealer@gmail.com | 03186818241</p>
+  </div>
+</footer>
+
+<a class="wa" href="https://wa.me/923186818241?text=Hello%20IQRA" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16.003 3C8.83 3 3 8.83 3 16c0 2.3.6 4.54 1.74 6.52L3 29l6.65-1.7A12.93 12.93 0 0 0 16 29c7.17 0 13-5.83 13-13S23.17 3 16.003 3zm0 23.7c-2 0-3.96-.54-5.67-1.56l-.4-.24-3.95 1.01 1.05-3.85-.27-.4A10.63 10.63 0 0 1 5.3 16c0-5.9 4.8-10.7 10.7-10.7S26.7 10.1 26.7 16 21.9 26.7 16.003 26.7zm5.87-8c-.32-.16-1.9-.94-2.2-1.04-.3-.1-.5-.16-.72.16-.22.32-.84 1.04-1.03 1.26-.19.22-.38.24-.7.08-.32-.16-1.36-.5-2.59-1.6-.96-.85-1.6-1.9-1.79-2.22-.19-.32-.02-.5.14-.66.14-.14.32-.38.48-.57.16-.19.22-.32.32-.54.1-.22.05-.4-.03-.57-.08-.16-.72-1.74-.99-2.38-.26-.62-.52-.54-.72-.55h-.62c-.22 0-.57.08-.86.4-.3.32-1.13 1.1-1.13 2.69s1.16 3.12 1.32 3.34c.16.22 2.28 3.48 5.52 4.88.77.33 1.37.53 1.84.68.77.25 1.48.21 2.04.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.13-.3-.21-.62-.37z"/></svg>
+</a>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+window.addEventListener('load',()=>setTimeout(()=>{document.getElementById('loader').classList.add('hide');document.body.classList.remove('loading');init()},2700));
+
+/* matrix rain */
+(function(){
+  const c=document.getElementById('rain'),x=c.getContext('2d');let w,h,cols,drops;
+  const ch='IQRA01<>/{}$#@%&*+=';const fs=15;
+  function size(){w=c.width=innerWidth;h=c.height=innerHeight;cols=Math.floor(w/fs);drops=Array.from({length:cols},()=>Math.random()*-60)}
+  size();addEventListener('resize',size);
+  setInterval(()=>{
+    x.fillStyle='rgba(4,7,13,.09)';x.fillRect(0,0,w,h);x.font=fs+'px "Share Tech Mono",monospace';
+    for(let i=0;i<cols;i++){
+      const t=ch[Math.floor(Math.random()*ch.length)];
+      x.fillStyle=Math.random()>.97?'#ffffff':(i%7===0?'#ff2bd6':'#00f0ff');
+      x.globalAlpha=.55;x.fillText(t,i*fs,drops[i]*fs);x.globalAlpha=1;
+      if(drops[i]*fs>h&&Math.random()>.975)drops[i]=0;drops[i]++}
+  },60);
+})();
+
+/* cursor */
+const cur=document.querySelector('.cur'),dot=document.querySelector('.cur-dot');
+let cx=0,cy=0,tx=0,ty=0;
+addEventListener('mousemove',e=>{tx=e.clientX;ty=e.clientY;dot.style.left=tx+'px';dot.style.top=ty+'px'});
+(function l(){cx+=(tx-cx)*.16;cy+=(ty-cy)*.16;cur.style.left=cx+'px';cur.style.top=cy+'px';requestAnimationFrame(l)})();
+document.querySelectorAll('a,button,.sv,.wk,.pn').forEach(el=>{el.addEventListener('mouseenter',()=>cur.classList.add('big'));el.addEventListener('mouseleave',()=>cur.classList.remove('big'))});
+
+/* role typing */
+const roles=['Social Media Marketer','Tricker (Small Hacking Tricks)','Ethical Hacker','Full Stack Web Developer'];
+let ri=0,ci=0,dl=false;const rEl=document.getElementById('role');
+(function ty(){const r=roles[ri];rEl.textContent='$ '+(dl?r.slice(0,ci--):r.slice(0,ci++));let s=dl?40:85;
+  if(!dl&&ci>r.length){dl=true;s=1500}else if(dl&&ci<0){dl=false;ri=(ri+1)%roles.length;ci=0;s=350}setTimeout(ty,s)})();
+
+/* strip */
+const items=['SOCIAL MEDIA MARKETER','TRICKER','ETHICAL HACKER','FULL STACK DEVELOPER','IQRA'];
+document.getElementById('strip').innerHTML=[...items,...items,...items,...items].map(t=>`<span>${t}</span>`).join('');
+
+/* scroll */
+const top_=document.getElementById('top'),prog=document.getElementById('prog');
+const secs=[...document.querySelectorAll('section')],links=[...document.querySelectorAll('.dock a')];
+addEventListener('scroll',()=>{
+  const s=scrollY,m=document.documentElement.scrollHeight-innerHeight;
+  top_.classList.toggle('s',s>40);prog.style.width=(s/m*100)+'%';
+  secs.forEach(sec=>{if(s+200>=sec.offsetTop&&s+200<sec.offsetTop+sec.offsetHeight)links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+sec.id))});
+});
+
+/* observers */
+function cnt(el){const to=+el.dataset.to;let n=0;const st=Math.max(16,1400/to);const t=setInterval(()=>{el.textContent=++n;if(n>=to)clearInterval(t)},st)}
+let termRan=false;
+function runTerm(){
+  if(termRan)return;termRan=true;
+  const L=[
+    ['<span class="p">iqra@secure:~$</span> whoami',250],
+    ['IQRA | Marketer • Tricker • Ethical Hacker • Full Stack Dev',500],
+    ['<span class="p">iqra@secure:~$</span> ./scan --target your-website --ethical',250],
+    ['<span class="g">[*] Checking security headers ...... done</span>',350],
+    ['<span class="g">[*] Testing inputs & forms .......... done</span>',350],
+    ['<span class="g">[*] Reviewing configuration ........ done</span>',350],
+    ['<span class="p">iqra@secure:~$</span> ./grow --social --brand',250],
+    ['[+] Ready to make your business secure & visible online ✓',400],
+    ['<span class="p">iqra@secure:~$</span> contact --whatsapp 03186818241 █',0]
+  ];
+  const el=document.getElementById('term');let i=0;
+  (function n(){if(i>=L.length)return;el.innerHTML+=L[i][0]+'\n';const d=L[i][1];i++;setTimeout(n,d+250)})();
+}
+function init(){
+  const io=new IntersectionObserver(es=>es.forEach(e=>{
+    if(!e.isIntersecting)return;
+    e.target.classList.add('show');
+    e.target.querySelectorAll('.cnt').forEach(cnt);
+    e.target.querySelectorAll('.fg').forEach(c=>c.style.strokeDashoffset=276.46*(1-c.dataset.p/100));
+    if(e.target.id==='termbox')runTerm();
+    io.unobserve(e.target)}),{threshold:.15});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%4)*.08+'s';io.observe(el)});
+}
+
+/* tilt on service cards */
+document.querySelectorAll('.sv').forEach(c=>{
+  c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect(),x=e.clientX-r.left,y=e.clientY-r.top;
+    c.style.transform=`perspective(800px) rotateX(${(y/r.height-.5)*-9}deg) rotateY(${(x/r.width-.5)*9}deg) translateY(-8px)`});
+  c.addEventListener('mouseleave',()=>c.style.transform='')});
+
+/* magnetic buttons */
+document.querySelectorAll('.mag').forEach(b=>{
+  b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.25}px,${(e.clientY-r.top-r.height/2)*.35-3}px)`});
+  b.addEventListener('mouseleave',()=>b.style.transform='')});
+
+/* form -> WhatsApp */
+document.getElementById('form').addEventListener('submit',e=>{
+  e.preventDefault();
+  const m=`Hello IQRA,%0A%0AName: ${encodeURIComponent(fname.value)}%0AEmail: ${encodeURIComponent(femail.value)}%0AService: ${encodeURIComponent(fservice.value)}%0A%0A${encodeURIComponent(fmsg.value)}`;
+  window.open('https://wa.me/923186818241?text='+m,'_blank');
+});
+</script>
+</body>
+</html>
